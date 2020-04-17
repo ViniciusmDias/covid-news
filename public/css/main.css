@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+body {
+	padding-top: 56px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #fafafa;
+	color: #000;
+}
+button {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+.apresentation {
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%;
+	padding: 10vh 2vw 0;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+.apresentation h1,
+.apresentation h2 {
+	text-align: center;
+	margin: 0;
+}
+.apresentation .about {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 4vh;
+}
+.apresentation .about .user-thumb {
+	height: 78px;
+	margin: 0 8px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	border-radius: 100%;
+	overflow: hidden;
+}
+.apresentation .about .user-thumb-wrapper {
+	height: 72px;
+	width: 72px;
+	border-radius: 100%;
+	border: 2px solid white;
+	display: inline-block;
+	overflow: hidden;
+}
+.apresentation .about .user-thumb-wrapper img {
+	height: 100%;
+	width: 100%;
+}
+.apresentation .about .about-text {
+	flex: 1;
+	padding: 1vh;
+}
+.apresentation .about .about-text p {
+	margin: 0;
+	font-weight: 700;
+}
+.apresentation .about .about-text p span {
+	margin: 0;
+	font-weight: 400;
+}
+@media (min-width: 600px) {
+	.apresentation {
+		padding: 5vh 2vw 0;
+	}
+}
+
+.feed {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+}
+.feed .post {
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	margin-bottom: 30px;
+	padding: 3vw;
+}
+.feed .post .post-header {
+	flex-direction: column;
+	display: flex;
+}
+.feed .post .post-header .author {
+	align-items: center;
+	display: flex;
+}
+
+.feed .post .post-header .author img {
+	margin-right: 8px;
+}
+.feed .post .post-header .author a {
+	color: black;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+.feed .post .post-header h4 {
+	margin: 0 0 2vh;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.post .post-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.post .post-body img {
+	width: 100%;
+}
+@media (min-width: 728px) {
+	.container {
+		width: 728px;
+	}
+	.feed {
+		padding: 16px 0;
+	}
+}
