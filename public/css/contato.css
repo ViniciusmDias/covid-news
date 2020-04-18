@@ -3,10 +3,10 @@
 	flex-wrap: wrap;
 }
 .post-body form .name {
-	width: 50%;
+	width: 60vw;
 }
 .post-body form .email {
-	width: 50%;
+	width: 60vw;
 }
 .post-body form .mensagem {
 	width: 100%;
